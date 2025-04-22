@@ -4,7 +4,7 @@ FROM haproxy:2.8
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 
 # (Opsional) Salin sertifikat jika pakai SSL/mTLS
-COPY certs/ /usr/local/etc/haproxy/certs/
+# COPY certs/ /usr/local/etc/haproxy/certs/
 
 # Port yang dibuka
 EXPOSE 80 443
